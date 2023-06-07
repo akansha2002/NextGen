@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+/* app.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Work+Sans:ital,wght@1,500&display=swap');
+body{
+    background-color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .outer_container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+.book-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
-}
+  
+  .book-details > div:first-child {
+    margin-top: 3px;
+    margin-bottom: 3rem;
+  }
+  .book-details > div:last-child {
+    margin-bottom: 3px;
+    margin-top: 1rem;
+  }
+  
+  .title {
+    margin-top: 3px;
+  }
+  
+  .details {
+    margin-bottom: 3px;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 250px;
+    margin-top: 4rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .image-container {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 2rem); /* Adjust the position based on button height */
+  }
+  
+  .previous-button,
+  .next-button {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  
+  .previous-button {
+    margin-right: auto;
+  }
+  
+  .next-button {
+    margin-left: auto;
+  }
+  .author{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.3rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+  }
+  .novel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  

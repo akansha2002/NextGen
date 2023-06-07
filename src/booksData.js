@@ -1,0 +1,173 @@
+
+const books = [
+    // Book objects
+    {
+      id: 1,
+      title: 'The Witness',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT-ATo-14cj-YFQAxZYl4nf2ALmQ0nRcbZfw&usqp=CAU',
+      
+      author: 'Nora Robert',
+      genre: 'Romance',
+      pages: 100,
+    },
+    {
+      id: 2,
+      title: 'Solve For Happy',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFD7vVabgKmHnJrvC27jOoQPieMgVeRj58eA&usqp=CAU',
+      author: 'Mo Gawdat',
+      genre: 'Self-help book',
+      pages: 150,
+    },
+    {
+      id: 3,
+      title: 'The Witness',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDfwzwwMROV80JST_dH9mOOaeb0w57r-Dl8A&usqp=CAU',
+      author: 'Nora Roberts',
+      genre: 'Romance',
+      pages: 130,
+    },
+    {
+      id: 4,
+      title: 'Retire Rich',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9RnIxF1ebTMlPudmmB_HN-j2q7-sJFPYbPg&usqp=CAU',
+      author: 'Subramanyam',
+      genre: 'Finance',
+      pages: 110,
+    },
+    {
+      id: 5,
+      title: 'The Privileged Poor',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfRAc-0JzSjDLuobYf-Ffy6fTqw-Ecfspt3A&usqp=CAU',
+      author: 'Anthony Jack',
+      genre: 'Literature',
+      pages: 180,
+    },
+    {
+      id: 6,
+      title: 'Helpless',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBzj-lAuqPLzcvY7NmdDQYHSAyooZtx3Fh2g&usqp=CAU',
+      author: 'Barbara Gowdy',
+      genre: 'Suspense Thriller',
+      pages: 160,
+    },
+    {
+      id: 7,
+      title: 'Hell House',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHbPS6p_vGnhLO8-2TSJvbi11HBNppqqXB4g&usqp=CAU',
+      
+      author: 'Richard Math',
+      genre: 'Horror fiction',
+      pages: 90,
+    },
+    {
+      id: 8,
+      title: 'Ionia: a Quest',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAbNT4ebjFm41b8ETdVoXzAFuLBZZCmWmNhg&usqp=CAU',
+      
+      author: 'Freya Stark',
+      genre: 'Travel literature',
+      pages: 70,
+    },
+    {
+      id: 9,
+      title: 'Pay Dirt Road',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzwoL5fYCPHE4gJZe9vcc-Lmg5JNQxH-jhQ&usqp=CAU',
+      author: 'Sama Jayne',
+      genre: 'Crime fiction',
+      pages: 80,
+    },
+    {
+      id: 10,
+      title: 'Highland River',
+      
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXwK9oyq2apD_bN44JYpm5KaEATKy9B8xMmQ&usqp=CAU',
+      author: 'Neil Gunn',
+      genre: 'Historical Fiction',
+      pages: 70,
+    },
+    {
+      id: 11,
+      title: 'Zoya',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSni8-vd9TR90Mtl0JnDDvacyW-gsItxptXZw&usqp=CAU',
+      author: 'Daniel Steel',
+      genre: 'Romance',
+      pages: 180,
+    },
+    {
+      id: 12,
+     
+      title: ' Robinson Crusoe',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7AwOj2e2L9xtX4Mn92OJBGo30UaWAgY7dw&usqp=CAU',
+      author: 'Daniel Defoe ',
+      genre: 'Novel',
+      pages: 90,
+    },
+    {
+      id: 13,
+      title: 'Moby Dick',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3GUoaSFxsPdb-IX7djwCweUD1Nyoq7NjgPQ&usqp=CAU',
+      author: 'Herman Mel',
+      genre: 'Novel',
+      pages: 130,
+    },
+    {
+      id: 14,
+      title: 'In Patagonia',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO0BquZAkKBZE4uCndU7rIFBTUjey8i7pJrA&usqp=CAU',
+      
+      author: 'Bruce Chatn',
+      genre: 'Travel literature',
+      pages: 150,
+    },
+    {
+      id: 15,
+      title: 'Someone Had to Do It ',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiXi1lPQo_smWAaytj1lepaCdaxqxxShikw&usqp=CAU',
+      author: 'Amber Brown',
+      genre: 'Fiction',
+      pages: 110,
+    },
+    {
+      id: 16,
+      title: 'Lets Talk Money',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF4npbJEX0vmHNy4GZhYTOsiAUJFmgAPB2RA&usqp=CAU',
+      author: 'Monika Halan',
+      genre: 'Finance',
+      pages: 130,
+    },
+    {
+      id: 17,
+      title: 'The Turn of the Screw ',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPVPibGd-sA1btTFO44ApuE8gzurwDnCZw7Q&usqp=CAU',
+      author: 'Henry James',
+      genre: 'Horror fiction',
+      pages: 130,
+    },
+    {
+      id: 18,
+      title: 'Where to Begin',
+      
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbfhElgaWRhvhAKGL-gbDiHhdAhUU_tNfH3g&usqp=CAU',
+      author: 'Richa Authin',
+      genre: 'Thriller',
+      pages: 190,
+    },
+    {
+      id: 19,
+      title: 'Educated : A Memoir',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsXCaA8wo_Bp9y3q2GfC0frlkEDCNPI3i_cw&usqp=CAU',
+      author: 'Tara Westover',
+      genre: 'Literature',
+      pages: 120,
+    },
+    {
+      id: 20,
+      title: 'Pride and Prejudice',
+      cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_z1N6VBC5Cz-hXQcwfWiMJ_0lB_5J6prKqw&usqp=CAU',
+      author: 'Jane Austen',
+      genre: 'Romance',
+      pages: 80,
+    },
+  ];
+
+  export default books;
